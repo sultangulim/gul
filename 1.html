@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Gulim Consulting</title>
+    <style>
+        /* Жалпы стиль */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Навигация */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header nav ul li a:hover {
+            border-bottom: 2px solid #e67e22;
+        }
+
+        /* Hero секция */
+        #hero {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #hero button {
+            background: #e67e22;
+            border: none;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #hero button:hover {
+            background: #d35400;
+        }
+
+        /* Секциялар */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* Қызметтер */
+        #services .grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #services .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 250px;
+        }
+        #services .card h3 {
+            margin-top: 10px;
+            color: #e67e22;
+        }
+
+        /* Байланыс */
+        #contact p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function openModal() {
+            alert("Қызметке тапсырыс беру үшін бізге хабарласыңыз!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gulim Consulting</h1>
+            <ul>
+                <li><a href="#about">Біз туралы</a></li>
+                <li><a href="#services">Қызметтер</a></li>
+                <li><a href="#contact">Байланыс</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Бизнесіңізді жаңа деңгейге көтереміз</h2>
+        <p>Маркетинг, стратегия және инновация бойынша кәсіби кеңес.</p>
+        <button onclick="openModal()">Қызметке тапсырыс беру</button>
+    </section>
+
+    <section id="about">
+        <h2>Біз туралы</h2>
+        <p>Біздің команда бизнес-жоспарлау, маркетинг және қаржылық талдау саласында тәжірибелі мамандардан тұрады.</p>
+    </section>
+
+    <section id="services">
+        <h2>Қызметтер</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Маркетингтік стратегия әзірлеу</h3>
+                <p>Нарықтағы позицияңызды күшейтуге көмектесеміз.</p>
+            </div>
+            <div class="card">
+                <h3>Қаржылық жоспарлау</h3>
+                <p>Компанияңыздың тұрақты дамуына жағдай жасаймыз.</p>
+            </div>
+            <div class="card">
+                <h3>Инновациялық жобаларды басқару</h3>
+                <p>Жаңа идеяларды іске асыруға қолдау көрсетеміз.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Байланыс</h2>
+        <p>Email: info@gulimconsulting.kz</p>
+        <p>Телефон: +7 (777) 123-45-67</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gulim Consulting. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
